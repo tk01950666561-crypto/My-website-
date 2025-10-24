@@ -5,36 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>আমার প্রথম ওয়েবসাইট</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: linear-gradient(135deg, #00b894, #0984e3);
-      color: white;
-      text-align: center;
-      padding: 50px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 {
-      font-size: 2.5em;
+    body {
+      font-family: "Noto Sans Bengali", sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #00b894, #0984e3);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0984e3;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00b894;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0984e3;
+      margin-bottom: 15px;
     }
     p {
-      font-size: 1.2em;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    footer {
+      background: #0984e3;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
     }
     button {
-      background: white;
-      color: #0984e3;
+      background: #0984e3;
+      color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      font-weight: bold;
+      font-size: 1em;
+      margin-top: 15px;
     }
     button:hover {
-      background: #dfe6e9;
+      background: #00b894;
     }
   </style>
 </head>
 <body>
-  <h1>✨ আমার প্রথম ফ্রি ওয়েবসাইট ✨</h1>
-  <p>এই ওয়েবসাইটটি GitHub Pages দিয়ে তৈরি করা হয়েছে।</p>
-  <button onclick="alert('ধন্যবাদ!')">আমাকে ক্লিক করুন</button>
+  <header>✨ আমার প্রথম ওয়েবসাইট ✨</header>
+
+  <nav>
+    <a href="#home">হোম</a>
+    <a href="#about">আমাদের সম্পর্কে</a>
+    <a href="#contact">যোগাযোগ</a>
+  </nav>
+
+  <section id="home">
+    <h2>স্বাগতম!</h2>
+    <p>এটি আমার প্রথম ফ্রি ওয়েবসাইট যা আমি GitHub Pages ব্যবহার করে তৈরি করেছি।</p>
+    <button onclick="alert('আপনার আগমনের জন্য ধন্যবাদ!')">আমাকে ক্লিক করুন</button>
+  </section>
+
+  <section id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>আমরা ছোট উদ্যোগ নিয়ে শুরু করেছি। আমাদের লক্ষ্য হলো অনলাইনে বাংলা ভাষায় সুন্দর ও সহজ ওয়েবসাইট তৈরি শেখানো, যাতে সবাই নিজস্ব ডিজিটাল পরিচয় গড়ে তুলতে পারে।</p>
+  </section>
+
+  <section id="contact">
+    <h2>যোগাযোগ</h2>
+    <p>📞 মোবাইল: <strong>+880 1XXXXXXXXX</strong></p>
+    <p>📧 ইমেইল: <strong>yourname@gmail.com</strong></p>
+    <p>📍 ঠিকানা: ঢাকা, বাংলাদেশ</p>
+  </section>
+
+  <footer>
+    © ২০২৫ আমার ওয়েবসাইট | তৈরি করেছেন তোমার নাম 💙
+  </footer>
 </body>
 </html>
