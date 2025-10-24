@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ডামি ই-কমার্স ওয়েবসাইট</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Noto Sans Bengali", sans-serif; background:#f5f5f5; }
+  header { background:#0984e3; color:white; padding:15px; display:flex; justify-content:space-between; align-items:center; }
+  header h1 { font-size:1.5em; }
+  .search-box input { padding:5px; width:200px; border-radius:5px; border:none; }
+  nav a { color:white; margin-left:15px; text-decoration:none; font-weight:bold; }
+  .banner { width:100%; height:200px; background:url('https://via.placeholder.com/1200x200') center/cover no-repeat; margin-top:10px; border-radius:10px; }
+  .categories { display:flex; justify-content:center; gap:15px; margin:20px 0; }
+  .categories div { background:white; padding:10px 15px; border-radius:5px; cursor:pointer; transition:0.3s; }
+  .categories div:hover { background:#0984e3; color:white; }
+  .products { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+  .product { background:white; width:200px; padding:10px; border-radius:10px; text-align:center; box-shadow:0 0 5px rgba(0,0,0,0.1); }
+  .product img { width:100%; border-radius:10px; }
+  .product h3 { margin:10px 0; color:#0984e3; }
+  .product p { margin:5px 0; font-weight:bold; }
+  .product button { padding:8px 12px; border:none; background:#00b894; color:white; border-radius:5px; cursor:pointer; transition:0.3s; }
+  .product button:hover { background:#0984e3; }
+  section { max-width:900px; margin:40px auto; background:white; padding:20px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+  footer { background:#0984e3; color:white; text-align:center; padding:15px; margin-top:40px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>ডামি স্টোর</h1>
+  <div>
+    <input class="search-box" type="text" placeholder="প্রোডাক্ট খুঁজুন...">
+    <nav>
+      <a href="#">লগইন</a>
+      <a href="#">সাইনআপ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="banner"></div>
+
+<div class="categories">
+  <div>Electronics</div>
+  <div>Clothing</div>
+  <div>Home</div>
+  <div>Toys</div>
+</div>
+
+<div class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/200x150" alt="Product">
+    <h3>প্রোডাক্ট ১</h3>
+    <p>৳500</p>
+    <button onclick="alert('প্রোডাক্ট ১ কার্টে যোগ হয়েছে!')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/200x150" alt="Product">
+    <h3>প্রোডাক্ট ২</h3>
+    <p>৳1200</p>
+    <button onclick="alert('প্রোডাক্ট ২ কার্টে যোগ হয়েছে!')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/200x150" alt="Product">
+    <h3>প্রোডাক্ট ৩</h3>
+    <p>৳800</p>
+    <button onclick="alert('প্রোডাক্ট ৩ কার্টে যোগ হয়েছে!')">Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="https://via.placeholder.com/200x150" alt="Product">
+    <h3>প্রোডাক্ট ৪</h3>
+    <p>৳1500</p>
+    <button onclick="alert('প্রোডাক্ট ৪ কার্টে যোগ হয়েছে!')">Add to Cart</button>
+  </div>
+</div>
+
+<section id="about">
+<h2>আমাদের সম্পর্কে</h2>
+<p>আমরা ছোট উদ্যোগ নিয়ে শুরু করেছি। আমাদের লক্ষ্য হলো অনলাইনে সহজ ও সুন্দর ই-কমার্স ওয়েবসাইট তৈরি শেখানো।</p>
+</section>
+
+<section id="contact">
+<h2>যোগাযোগ</h2>
+<p>📞 মোবাইল: +880 1XXXXXXXXX</p>
+<p>📧 ইমেইল: yourname@gmail.com</p>
+<p>📍 ঠিকানা: ঢাকা, বাংলাদেশ</p>
+</section>
+
+<footer>
+© ২০২৫ ডামি স্টোর | তৈরি করেছেন তোমার নাম 💙
+</footer>
+
+</body>
+</html>
